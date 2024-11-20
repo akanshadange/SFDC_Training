@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Contact-Customer Layout</members>
+        <members>Contact-Service Provider Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Service Account Team</members>
+        <members>Technology Team</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Contact.Customer</members>
+        <members>Contact.Service_Provider</members>
+        <name>RecordType</name>
+    </types>
+    <version>60.0</version>
+</Package>
