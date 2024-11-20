@@ -10,6 +10,7 @@
         <members>Attendee__c.Phone__c</members>
         <members>Attendee__c.Session__c</members>
         <members>Attendee__c.Training_Session__c</members>
+        <members>Feedback__c.Area_for_Improvement__c</members>
         <members>Feedback__c.Comments__c</members>
         <members>Feedback__c.Rating__c</members>
         <members>Feedback__c.Session__c</members>
@@ -21,6 +22,7 @@
         <members>Training_Session__c.No_of_Attendee__c</members>
         <members>Training_Session__c.Session_Date__c</members>
         <members>Training_Session__c.Session_Description__c</members>
+        <members>Training_Session__c.Session_Type__c</members>
         <members>Training_Session__c.Total_Feedback_Count__c</members>
         <members>Training_Session__c.Total_Rating__c</members>
         <name>CustomField</name>
@@ -32,10 +34,22 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Adventure__c</members>
-        <members>Feedback__c</members>
-        <members>Training_Session__c</members>
-        <name>CustomTab</name>
+        <members>Attendee__c-Attendee Layout</members>
+        <members>Feedback__c-Feedback Layout</members>
+        <members>Training_Session__c-Training Session Layout</members>
+        <members>Training_Session__c-Webinar Layout</members>
+        <members>Training_Session__c-Workshop Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Training_Session__c.Webinar</members>
+        <members>Training_Session__c.Workshop</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Attendee__c.Valid_Email_Format</members>
+        <members>Training_Session__c.Session_Date_In_Future</members>
+        <name>ValidationRule</name>
     </types>
     <version>60.0</version>
 </Package>
