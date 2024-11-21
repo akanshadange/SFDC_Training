@@ -519,7 +519,7 @@
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>ASS Opty Record Page</masterLabel>
+    <masterLabel>OpportunityRecordPages1</masterLabel>
     <sobjectType>Opportunity</sobjectType>
     <template>
         <name>flexipage:recordHomeSimpleViewTemplate</name>

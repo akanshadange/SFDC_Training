@@ -44,7 +44,7 @@
         <name>right</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Ass_Home_Page</masterLabel>
+    <masterLabel>Default_Home_Page</masterLabel>
     <template>
         <name>home:desktopTemplateHeaderThreeColumns</name>
     </template>
