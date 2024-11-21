@@ -5,10 +5,6 @@
         <name>AnimationRule</name>
     </types>
     <types>
-        <members>Opportunity.Ass_Compact_Layout_for_opty</members>
-        <name>CompactLayout</name>
-    </types>
-    <types>
         <members>Opportunity</members>
         <name>CustomObject</name>
     </types>
