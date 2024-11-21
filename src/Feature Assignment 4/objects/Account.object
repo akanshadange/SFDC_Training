@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <validationRules>
+        <fullName>website</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISBLANK( Website ),
+NOT( $Setup.Bypass_Logic__c.Bypass_Validation_Rules__c = TRUE 
+ &amp;&amp;   $User.Username = &apos;markwahibergs@gmail.com&apos;
+)
+)</errorConditionFormula>
+        <errorMessage>enter website</errorMessage>
+    </validationRules>
+</CustomObject>

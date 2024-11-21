@@ -1,0 +1,11 @@
+Hello 
+{!Approval_Requesting_User.Name}
+
+A new discount approval request has been submitted for the Opportunity {!Opportunity.Name}. 
+Click on the link to approve the Opportunity discount:- {!ApprovalRequest.Internal_URL}
+
+The Discount Percent is {!Opportunity.Discount_Percent__c}%
+
+Please review and approve or reject the request
+
+Thank You.
