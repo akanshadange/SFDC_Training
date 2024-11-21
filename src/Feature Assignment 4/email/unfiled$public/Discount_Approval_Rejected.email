@@ -1,0 +1,15 @@
+Hello  {!User.FirstName} {!User.LastName}
+
+We regret to inform you that your discount request for the Opportunity {!Opportunity.Name} has been **rejected** by the CEO.
+
+Details:
+- Opportunity: {!Opportunity.Name}
+- Discount Percent: {!Opportunity.Discount_Percent__c}%
+- Status: Rejected
+
+Please review the request and consider revising the discount or reaching out for further guidance on how to proceed.
+
+Thank you for your understanding.
+
+Best regards,
+The Salesforce Team

@@ -1,0 +1,13 @@
+Hello {!Opportunity.OwnerFullName}
+
+Good news! Your discount request for the Opportunity {!Opportunity.Name} has been **approved** by the CEO.
+
+Details:
+- Opportunity: {!Opportunity.Name}
+- Discount Percent: {!Opportunity.Discount_Percent__c}%
+- Status: Approved
+
+Thank you for your submission. The discount has been applied, and you can proceed with the next steps in closing the opportunity.
+
+Best regards,
+The Salesforce Team
