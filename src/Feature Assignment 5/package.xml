@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Feedback__c.Area_for_Improvement__c</members>
+        <members>Feedback__c.Comments__c</members>
+        <members>Feedback__c.Rating__c</members>
+        <members>Feedback__c.Session__c</members>
+        <members>Feedback__c.Strengths__c</members>
+        <members>Feedback__c.Training_Session__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Feedback__c</members>
+        <members>Lead</members>
+        <members>Training_Session__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>Lead.Industry_scoping_rules</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Service_Account_Permission_Set</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Service Account Team</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Training_Session__c.Webinar</members>
+        <members>Training_Session__c.Workshop</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>Feedback_They_Own_Restriction</members>
+        <members>View_Lead_Industry_Restriction</members>
+        <members>sales_dept_webinar_restriction</members>
+        <name>RestrictionRule</name>
+    </types>
+    <version>60.0</version>
+</Package>
