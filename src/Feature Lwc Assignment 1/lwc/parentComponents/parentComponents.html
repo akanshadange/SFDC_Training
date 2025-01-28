@@ -1,14 +1,11 @@
 <template>
     <lightning-card title="Parent Component" class="slds-card_custom">
-        <div class="slds-p-around_small">
-            <lightning-layout multiple-rows>
-                <lightning-layout-item size="12" class="slds-m-bottom_medium">
-                    <lightning-input lwc:ref="greetings" placeholder="Enter a Greeting Here..." class="input-field" ></lightning-input>
+        <div class="slds-p-around_x-small">
+            <lightning-layout multiple-rows class="slds-var-p-around_none">
+                <lightning-layout-item size="10">
+                    <lightning-input lwc:ref="greetings" placeholder="Enter a Greeting Here..." class="slds-var-m-around_x-small" onchange={handleChange}></lightning-input>
                 </lightning-layout-item>
-                <lightning-layout-item size="12" class="slds-m-top_small slds-m-bottom_medium">
-                    <lightning-button label="Submit" onclick={submitClickHandler} variant="brand" class="slds-button slds-button_brand"></lightning-button>
-                </lightning-layout-item>
-                <lightning-layout-item size="12" class="slds-m-top_small">
+                <lightning-layout-item size="12" class="slds-var-m-top_small">
                     <c-child-component greetings={parentgreetings}></c-child-component>
                 </lightning-layout-item>
             </lightning-layout>
