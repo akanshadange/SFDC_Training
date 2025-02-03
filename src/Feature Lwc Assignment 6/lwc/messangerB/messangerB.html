@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Messanger B Component">
+        <div class="slds-p-around_medium">
+            <div>Message to Send</div>
+            <lightning-input type="text" onchange={handleChange}></lightning-input>
+            <div class="slds-m-top_medium">
+                Received Message here :  <strong>{receivedMessagefromA}</strong>
+            </div>
+        </div>
+    </lightning-card>
+</template>
