@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Account Detail">
+        <lightning-record-view-form object-api-name="Account" record-id={recordId}>
+            <div class="slds-grid slds-wrap slds-p-around_large">
+                <template for:each={fieldList} for:item="field">
+                    <div key={field.fieldName} class="slds-col slds-size_6-of-12">
+                        <lightning-output-field field-name={field}></lightning-output-field>
+                    </div>
+                </template>
+            </div>
+        </lightning-record-view-form>
+    </lightning-card>
+    <template if:true={isCreateButtonVisible}>
+        <div class="slds-m-top_small slds-m-bottom_medium">
+            <lightning-button label="Create Contact" onclick={handleCreateNewContact} class="slds-m-left_x-small" variant="brand" ></lightning-button>
+        </div>
+    </template>
+    <template if:true={isCreatingContact}>
+        <lightning-record-edit-form object-api-name="Contact" onsuccess={handleContactSuccess} onerror={handleContactError} density="dummy">            
+            <lightning-input-field field-name={firstNameField}></lightning-input-field>
+            <lightning-input-field field-name={lastNameField}></lightning-input-field>
+            <lightning-input-field field-name={phoneField}></lightning-input-field>
+            <lightning-input-field field-name={emailField}></lightning-input-field>
+            <!-- field name for Account id on contact creation-->
+            <lightning-input-field field-name="AccountId" value={recordId}></lightning-input-field>
+            <div class="slds-m-top_medium">
+                <lightning-button type="submit" label="Save Contact" variant="brand" onclick={handleClick} ></lightning-button>
+                <lightning-button label="Cancel" onclick={handleCancel} variant="neutral" class="slds-m-left_small"></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </template>
+</template>

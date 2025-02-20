@@ -1,0 +1,38 @@
+<template>
+    <lightning-button label="Account Manager Wizard" onclick={handleOpenModal}></lightning-button>
+    <template if:true={isModalOpen}>
+        <lightning-card>
+            <div class="slds-p-around_medium">
+                <template if:true={accountData}>
+                    <div>
+                        <p><strong>Account Name:</strong> {accountData.Name}</p>
+                        <p><strong>Account Owner:</strong> {accountData.Owner.Name}</p>
+                        <p><strong>Number of Contacts:</strong> {accountData.No_Of_Contacts__c}</p>
+                        <p><strong>Description:</strong> {accountData.Description}</p>
+                    </div>
+                </template>
+                <div class="slds-grid slds-grid_vertical-align-center slds-p-top_medium">
+                    <div class="slds-col slds-size_1-of-2 slds-p-right_medium">
+                        <lightning-input label="Search Contacts" type="search" value={searchTerm} onchange={handleSearchChange} placeholder="Search For a Contacts Here..." class="slds-text-title_bold"></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-m-top_medium">
+                        <lightning-button label="Create New Contact" onclick={handleCreateNewContact}></lightning-button>
+                    </div>
+                </div>
+                <template if:true={isContactFormOpen}>
+                    <c-contact-save-form account-id={recordId} oncontactcreated={handleContactCreated}></c-contact-save-form>          
+                </template>
+                <template if:true={filteredContacts}>
+                    <div class="slds-p-top_large">
+                        <lightning-datatable
+                            data={filteredContacts}
+                            columns={columns}
+                            key-field="Id"
+                            hide-checkbox-column>
+                        </lightning-datatable>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </template>
+</template>
