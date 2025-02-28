@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ContactTriggerHandler</members>
+        <members>ContactTriggerHandlerTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Contact.Address_Verified__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Apiintegration</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>62.0</version>
+</Package>
